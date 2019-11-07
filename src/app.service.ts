@@ -912,10 +912,12 @@ jsonApointments =
             CitaNumero: dataTable.consecutivo_ord_procesa ? parseInt(dataTable.consecutivo_ord_procesa) : 'No hay dato',
             FechaRecogida: parseInt(dataTable.fecha_recogida) > 0 ? dataTable.fecha_recogida : 'Sin asignar',
             HoraRecogida: parseInt(dataTable.fecha_recogida) > 0 ? 'le del filosofo' : 'Sin asignar',
-            
+            Transportadora: dataTable.transporte_propio ?  dataTable.transporte_propio : 'Sin asignar',
+            Documentos: `Doc. Compra: ${dataTable.doc_compra} \n Ord. Fabricacion: ${parseInt(dataTable.orden_fabricacion)}`,
+            Order: index
          })
      })
-    return this.jsonCitas;
+    return this.jsonApointments;
   }
 }
 
