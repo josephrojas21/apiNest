@@ -15,5 +15,10 @@ export class AppController {
     return this.appService.getApointments();
   }
 
+  @Get('/reports')
+  getReports(): Object{
+    return this.appService.getReport();
+  }
+
   
 }
