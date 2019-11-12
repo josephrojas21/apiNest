@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, ParseIntPipe } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
@@ -833,7 +833,7 @@ export class AppService {
       }
    }]
 
-   jsonApointments =
+   jsonApointments =[
       {
 
          columns: [
@@ -876,8 +876,11 @@ export class AppService {
             }
          ],
          rows: []
+      },
+      {
+         Details: []
       }
-
+   ]
 
    jsonReports = [{
       "Resp_MT_PORTALPROVEEDOR_REPORTEORDENES": {
@@ -1626,7 +1629,7 @@ export class AppService {
                field: 'cantidad_inicial',
                sort: 'asc',
                width: 80
-            },
+            }, 
             {
                label: 'Cantidad Solicitadas en Citas',
                field: 'cantidad_confirmada',
@@ -1686,7 +1689,7 @@ export class AppService {
    getApointments(): Object {
       let apointments = this.jsonCitas[0].Resp_MT_PORTALPROVEEDOR_CONSULTARCITAS28.CITAREGISTRADA.CABECERA
       apointments.map((dataTable, index) => {
-         this.jsonApointments.rows.push({
+         this.jsonApointments[0].rows.push({
             CitaNumero: dataTable.consecutivo_ord_procesa ? parseInt(dataTable.consecutivo_ord_procesa) : 'No hay dato',
             FechaRecogida: parseInt(dataTable.fecha_recogida) > 0 ? dataTable.fecha_recogida : 'Sin asignar',
             HoraRecogida: parseInt(dataTable.fecha_recogida) > 0 ? 'le del filosofo' : 'Sin asignar',
@@ -1694,14 +1697,37 @@ export class AppService {
             Documentos: `Doc. Compra: ${dataTable.doc_compra} \n Ord. Fabricacion: ${parseInt(dataTable.orden_fabricacion)}`,
             Order: index
          })
+         this.jsonApointments[1].Details.push({
+            table: dataTable.DETALLE,
+            tulas: parseInt(dataTable.tulas),
+            bolsas: parseInt(dataTable.bolsas),
+            cajas: parseInt(dataTable.cajas),
+            nit: parseInt(dataTable.acreedor),
+            nombre: dataTable.nombre_acreedor,
+            dir: dataTable.direccion,
+            mail: dataTable.correo_electronico,
+            doc_compra: dataTable.doc_compra,
+            cod_material:  parseInt(dataTable.material),
+            orden: parseInt(dataTable.orden_fabricacion),
+            material: dataTable.texto_material,
+            ord_proceso: parseInt(dataTable.consecutivo_ord_procesa)
+         }
+            
+         )
      })
-    return this.jsonApointments;
+    return apointments;
   }
 
+   getDetailsApoinments(id: number): Object{
+
+      return this.jsonApointments[1].Details[id]
+   }
+
+
    getReport(): Object {
-      let repots = this.jsonReports[0].Resp_MT_PORTALPROVEEDOR_REPORTEORDENES.ORDENESPENDIENTES.CABECERA;
+      let reports = this.jsonReports[0].Resp_MT_PORTALPROVEEDOR_REPORTEORDENES.ORDENESPENDIENTES.CABECERA;
       
-      repots.map((dataTable, vc) => {
+      reports.map((dataTable, vc) => {
         
          for (let vc2 of dataTable.DETALLE) {
 
