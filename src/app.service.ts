@@ -1694,7 +1694,7 @@ export class AppService {
             FechaRecogida: parseInt(dataTable.fecha_recogida) > 0 ? dataTable.fecha_recogida : 'Sin asignar',
             HoraRecogida: parseInt(dataTable.fecha_recogida) > 0 ? 'le del filosofo' : 'Sin asignar',
             Transportadora: dataTable.transporte_propio ?  dataTable.transporte_propio : 'Sin asignar',
-            Documentos: `Doc. Compra: ${dataTable.doc_compra} \n Ord. Fabricacion: ${parseInt(dataTable.orden_fabricacion)}`,
+            Documentos: `Doc. Compra: ${dataTable.doc_compra} \n Ord.Fabricacion: ${parseInt(dataTable.orden_fabricacion)} `,
             Order: index
          })
          this.jsonApointments[1].Details.push({
@@ -1710,12 +1710,13 @@ export class AppService {
             cod_material:  parseInt(dataTable.material),
             orden: parseInt(dataTable.orden_fabricacion),
             material: dataTable.texto_material,
-            ord_proceso: parseInt(dataTable.consecutivo_ord_procesa)
+            ord_proceso: parseInt(dataTable.consecutivo_ord_procesa),
+            categoria: dataTable.categoria_stock
          }
             
          )
      })
-    return apointments;
+    return this.jsonApointments;
   }
 
    getDetailsApoinments(id: number): Object{
