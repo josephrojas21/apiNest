@@ -656,29 +656,34 @@ export class AppService {
 
          columns: [
             {
+               label: 'Item',
+               field: 'Item',
+               sort: 'asc',
+               width: 50
+            },
+            {
                label: 'Fecha',
                field: 'Fecha',
                sort: 'asc',
                width: 150,
-
             },
             {
                label: 'Documento compra',
                field: 'DocCompra',
                sort: 'asc',
-               width: 270
+               width: 200
             },
             {
                label: 'Orden fabricacion',
                field: 'OrdenFab',
                sort: 'asc',
-               width: 200
+               width: 170
             },
             {
                label: 'Codigo material',
                field: 'CodMaterial',
                sort: 'asc',
-               width: 100
+               width: 90
             },
             {
                label: 'Material',
@@ -690,8 +695,8 @@ export class AppService {
                label: 'Descripcion orden',
                field: 'DescOrden',
                sort: 'asc',
-               width: 100
-            }
+               width: 200
+            }  
          ],
          rows: []
       },
@@ -1666,11 +1671,12 @@ export class AppService {
       orders.map((dataTable, index) => {
          this.jsonTable[0].rows.push({
             Fecha: this.dateFormat(dataTable.fecha_entrega),
-            DocCompra: dataTable.doc_compra ? dataTable.doc_compra : 'No hay dato',
-            OrdenFab: dataTable.orden_fabricacion ? parseInt(dataTable.orden_fabricacion) : 'No hay dato',
-            CodMaterial: dataTable.material ? parseInt(dataTable.material) : 'No hay dato',
-            Material: dataTable.texto_material ? dataTable.texto_material : 'No hay dato',
-            DescOrden: dataTable.usuario ? dataTable.usuario : 'No hay dato',
+            DocCompra: dataTable.doc_compra ? dataTable.doc_compra : ' ',
+            OrdenFab: dataTable.orden_fabricacion ? parseInt(dataTable.orden_fabricacion) : ' ',
+            CodMaterial: dataTable.material ? parseInt(dataTable.material) : ' ',
+            Material: dataTable.texto_material ? dataTable.texto_material : ' ',
+            DescOrden: dataTable.campana_orden ? 'Campaña: ' +  dataTable.campana_orden + '\n' + ' Version: ' + dataTable.version + ' ' +
+            '\nResp.Pedido: ' + dataTable.usuario : ' ',
             Order: index
          })
          this.jsonTable[1].Details.push(
@@ -1694,7 +1700,7 @@ export class AppService {
             FechaRecogida: parseInt(dataTable.fecha_recogida) > 0 ? dataTable.fecha_recogida : 'Sin asignar',
             HoraRecogida: parseInt(dataTable.fecha_recogida) > 0 ? 'le del filosofo' : 'Sin asignar',
             Transportadora: dataTable.transporte_propio ?  dataTable.transporte_propio : 'Sin asignar',
-            Documentos: `Doc. Compra: ${dataTable.doc_compra} \n Ord. Fabricacion: ${parseInt(dataTable.orden_fabricacion)}`,
+            Documentos: `Doc. Compra: ${dataTable.doc_compra} \n  Ord.Fabricacion: ${parseInt(dataTable.orden_fabricacion)}`,
             Order: index
          })
          this.jsonApointments[1].Details.push({
