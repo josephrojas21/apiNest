@@ -1686,7 +1686,7 @@ export class AppService {
       })
       return this.jsonTable;
    }
-   
+
 // Modificando
    getdeliveryCategoriesById(id: number): Object{
       return this.jsonexample[0].Resp_MT_PORTALPROVEEDOR_ORDENESPENDIENTES.ORDENESPENDIENTES.CABECERA[id].DETALLE;
