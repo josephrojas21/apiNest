@@ -6,8 +6,13 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  getHello(): Object {
-    return this.appService.getHello();
+  getDeliveryCategories(): Object {
+    return this.appService.getDeliveryCategories();
+  }
+
+  @Get('/deliveryCategoriesById/:id')
+  getdeliveryCategoriesById(@Param() params): Object{
+    return this.appService.getdeliveryCategoriesById(params.id);
   }
 
   @Get('/apointments')
@@ -18,9 +23,7 @@ export class AppController {
   @Get('apointments/:id')
   getDetailsApoinments(@Param() params):Object {
     console.log(params.id);
-    return this.appService.getDetailsApoinments(params.id)
-    
-    
+    return this.appService.getDetailsApoinments(params.id)   
   }
  
   @Get('/reports')

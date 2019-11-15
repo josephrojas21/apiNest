@@ -690,10 +690,10 @@ export class AppService {
                field: 'Material',
                sort: 'asc',
                width: 150
-            },
+            },   
             {
                label: 'Descripcion orden',
-               field: 'DescOrden',
+               field: 'DescOrdenTabulado',
                sort: 'asc',
                width: 200
             }  
@@ -1665,7 +1665,7 @@ export class AppService {
    ]
 
 
-   getHello(): object {
+   getDeliveryCategories(): object {
       //console.log(this.jsonexample[0].Resp_MT_PORTALPROVEEDOR_ORDENESPENDIENTES.ORDENESPENDIENTES.CABECERA);
       let orders = this.jsonexample[0].Resp_MT_PORTALPROVEEDOR_ORDENESPENDIENTES.ORDENESPENDIENTES.CABECERA;
       orders.map((dataTable, index) => {
@@ -1675,17 +1675,23 @@ export class AppService {
             OrdenFab: dataTable.orden_fabricacion ? parseInt(dataTable.orden_fabricacion) : ' ',
             CodMaterial: dataTable.material ? parseInt(dataTable.material) : ' ',
             Material: dataTable.texto_material ? dataTable.texto_material : ' ',
-            DescOrden: dataTable.campana_orden ? 'Campaña: ' +  dataTable.campana_orden + '\n' + ' Version: ' + dataTable.version + ' ' +
-            '\nResp.Pedido: ' + dataTable.usuario : ' ',
+            DescOrdenCampana: dataTable.campana_orden ? 'Campaña: ' +  dataTable.campana_orden : ' ' ,
+            DescOrdenVersion: dataTable.version ? 'Version: ' + dataTable.version : ' ' ,
+            DescOrdenPedido: dataTable.usuario ? 'Resp.Pedido: ' + dataTable.usuario : ' ',
             Order: index
          })
          this.jsonTable[1].Details.push(
             dataTable.DETALLE
          )
       })
-
       return this.jsonTable;
    }
+   
+// Modificando
+   getdeliveryCategoriesById(id: number): Object{
+      return this.jsonexample[0].Resp_MT_PORTALPROVEEDOR_ORDENESPENDIENTES.ORDENESPENDIENTES.CABECERA[id].DETALLE;
+   }
+
 
    dateFormat(date: number) {
       let newDate = date.toString()
@@ -1700,11 +1706,7 @@ export class AppService {
             FechaRecogida: parseInt(dataTable.fecha_recogida) > 0 ? dataTable.fecha_recogida : 'Sin asignar',
             HoraRecogida: parseInt(dataTable.fecha_recogida) > 0 ? 'le del filosofo' : 'Sin asignar',
             Transportadora: dataTable.transporte_propio ?  dataTable.transporte_propio : 'Sin asignar',
-<<<<<<< HEAD
-            Documentos: `Doc. Compra: ${dataTable.doc_compra} \n  Ord.Fabricacion: ${parseInt(dataTable.orden_fabricacion)}`,
-=======
             Documentos: `Doc. Compra: ${dataTable.doc_compra} \n Ord.Fabricacion: ${parseInt(dataTable.orden_fabricacion)} `,
->>>>>>> 5ee54fb0e7c000166b462dcc5328653bad392880
             Order: index
          })
          this.jsonApointments[1].Details.push({
