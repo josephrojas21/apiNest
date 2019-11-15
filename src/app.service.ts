@@ -1700,11 +1700,7 @@ export class AppService {
             FechaRecogida: parseInt(dataTable.fecha_recogida) > 0 ? dataTable.fecha_recogida : 'Sin asignar',
             HoraRecogida: parseInt(dataTable.fecha_recogida) > 0 ? 'le del filosofo' : 'Sin asignar',
             Transportadora: dataTable.transporte_propio ?  dataTable.transporte_propio : 'Sin asignar',
-<<<<<<< HEAD
             Documentos: `Doc. Compra: ${dataTable.doc_compra} \n  Ord.Fabricacion: ${parseInt(dataTable.orden_fabricacion)}`,
-=======
-            Documentos: `Doc. Compra: ${dataTable.doc_compra} \n Ord.Fabricacion: ${parseInt(dataTable.orden_fabricacion)} `,
->>>>>>> 5ee54fb0e7c000166b462dcc5328653bad392880
             Order: index
          })
          this.jsonApointments[1].Details.push({
