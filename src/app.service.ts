@@ -1670,6 +1670,18 @@ export class AppService {
       let orders = this.jsonexample[0].Resp_MT_PORTALPROVEEDOR_ORDENESPENDIENTES.ORDENESPENDIENTES.CABECERA;
       orders.map((dataTable, index) => {
          this.jsonTable[0].rows.push({
+            //AGRAGADOS PARA HACER POST GUARDAR
+            acreedor : dataTable.acreedor ? dataTable.acreedor : ' ',
+            nombre_acreedor: dataTable.nombre_acreedor ? dataTable.nombre_acreedor : ' ',
+            direccion: dataTable.direccion ? dataTable.direccion : ' ',
+            correo_electronico:  dataTable.correo_electronico ? dataTable.correo_electronico : ' ',   
+            campana_orden :  dataTable.campana_orden ? dataTable.campana_orden : ' ',        
+            version: dataTable.version ?  dataTable.version : ' ' ,
+            usuario:  dataTable.usuario ? dataTable.usuario : ' ',      
+            fecha_entrega : dataTable.fecha_entrega ? dataTable.fecha_entrega : ' ',   
+            categoria_stock :    dataTable.categoria_stock ? dataTable.categoria_stock : ' ',   
+            //FIN DE AGREGADOS
+
             Fecha: this.dateFormat(dataTable.fecha_entrega),
             DocCompra: dataTable.doc_compra ? dataTable.doc_compra : ' ',
             OrdenFab: dataTable.orden_fabricacion ? parseInt(dataTable.orden_fabricacion) : ' ',
