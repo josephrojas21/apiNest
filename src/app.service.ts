@@ -25,6 +25,15 @@ export class AppService {
                   "fecha_entrega": 20170331,
                   "categoria_stock": "CRML1",
                   "usuario": "Jhon Fredy Mejia",
+                  "faseProve": "",
+                  "TALLERES": [
+                     {
+                        "direccion": "VENECIA"
+                     },
+                     {
+                        "direccion": "VERSALLES"
+                     }
+                  ],
                   "DETALLE": [
                      {
                         "valor_matriz": "32BL",
@@ -34,7 +43,8 @@ export class AppService {
                         "cantidad_entregar": "31 ",
                         "cantidad_confirmada": "1 ",
                         "cantidad_maxima": "36 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "true"
                      },
                      {
                         "valor_matriz": "34BL",
@@ -44,7 +54,8 @@ export class AppService {
                         "cantidad_entregar": "1 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "206 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "true"
                      },
                      {
                         "valor_matriz": "36BL",
@@ -54,7 +65,8 @@ export class AppService {
                         "cantidad_entregar": "1 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "97 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "true"
                      },
                      {
                         "valor_matriz": "38BL",
@@ -64,7 +76,8 @@ export class AppService {
                         "cantidad_entregar": "31 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "36 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      }
                   ]
                },
@@ -82,6 +95,8 @@ export class AppService {
                   "fecha_entrega": 20170428,
                   "categoria_stock": "CRML1",
                   "usuario": "ALEX FLOREZ",
+                  "faseProve": "",
+                  "TALLERES": undefined,
                   "DETALLE": [
                      {
                         "valor_matriz": "32BL",
@@ -91,7 +106,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "1 ",
                         "cantidad_maxima": "110 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "34BL",
@@ -101,7 +117,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "1 ",
                         "cantidad_maxima": "110 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "36BL",
@@ -111,7 +128,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "110 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      }
                   ]
                },
@@ -122,13 +140,15 @@ export class AppService {
                   "correo_electronico": "artem.sas@hotmail.com",
                   "doc_compra": 5100038140,
                   "orden_fabricacion": "000002022711",
-                  "material": "000000000000507777",
+                  "material": undefined,
                   "texto_material": "CHAQUETA MANGA LARGA",
                   "campana_orden": "2017/01",
                   "version": "F",
                   "fecha_entrega": 20170428,
                   "categoria_stock": "CRML1",
                   "usuario": "ALEX FLOREZ",
+                  "faseProve": "",
+                  "TALLERES": undefined,
                   "DETALLE": [
                      {
                         "valor_matriz": "XS  VD",
@@ -138,7 +158,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "55 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "S   VD",
@@ -148,7 +169,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "55 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "M   VD",
@@ -158,7 +180,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "55 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "L   VD",
@@ -168,7 +191,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "55 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      }
                   ]
                },
@@ -186,6 +210,8 @@ export class AppService {
                   "fecha_entrega": 20170428,
                   "categoria_stock": "PCFK1",
                   "usuario": "ALEX FLOREZ",
+                  "faseProve": "",
+                  "TALLERES": undefined,
                   "DETALLE": [
                      {
                         "valor_matriz": "S   UN",
@@ -195,7 +221,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "220 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "M   UN",
@@ -205,7 +232,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "220 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "L   UN",
@@ -215,7 +243,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "220 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      }
                   ]
                },
@@ -232,6 +261,8 @@ export class AppService {
                   "fecha_entrega": 20180328,
                   "categoria_stock": "YBNA1",
                   "usuario": "RANGELDA",
+                  "faseProve": "",
+                  "TALLERES": undefined,
                   "DETALLE": [
                      {
                         "valor_matriz": "30BL01B",
@@ -241,7 +272,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "100 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "32BL01B",
@@ -251,7 +283,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "200 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "34BL01B",
@@ -261,7 +294,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "300 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      }
                   ]
                },
@@ -278,6 +312,8 @@ export class AppService {
                   "fecha_entrega": 20180328,
                   "categoria_stock": "YBNA1",
                   "usuario": "RANGELDA",
+                  "faseProve": "FASE2",
+                  "TALLERES": undefined,
                   "DETALLE": [
                      {
                         "valor_matriz": "30BL01C",
@@ -287,7 +323,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "20 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "30BL01B",
@@ -297,7 +334,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "10 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "32BL01B",
@@ -307,7 +345,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "30 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "34BL01B",
@@ -317,7 +356,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "50 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "32BL01C",
@@ -327,7 +367,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "40 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "34BL01C",
@@ -337,7 +378,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "60 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      }
                   ]
                },
@@ -354,6 +396,8 @@ export class AppService {
                   "fecha_entrega": 20180404,
                   "categoria_stock": "YBNA1",
                   "usuario": "Julian CARVAJAL",
+                  "faseProve": "",
+                  "TALLERES": undefined,
                   "DETALLE": [
                      {
                         "valor_matriz": "30BL01B",
@@ -363,7 +407,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "100 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "30BL01C",
@@ -373,7 +418,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "100 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "32BL01B",
@@ -383,7 +429,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "100 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "32BL01C",
@@ -393,7 +440,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "100 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "34BL01B",
@@ -403,7 +451,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "100 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "34BL01C",
@@ -413,7 +462,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "100 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      }
                   ]
                },
@@ -430,6 +480,8 @@ export class AppService {
                   "fecha_entrega": 20180417,
                   "categoria_stock": "YBNA1",
                   "usuario": "RANGELDA",
+                  "faseProve": "FASE1",
+                  "TALLERES": undefined,
                   "DETALLE": [
                      {
                         "valor_matriz": "30BL01B",
@@ -439,7 +491,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "100 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "30BL01C",
@@ -449,7 +502,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "110 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "32BL01B",
@@ -459,7 +513,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "200 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "32BL01C",
@@ -469,7 +524,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "210 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "34BL01B",
@@ -479,7 +535,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "300 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "34BL01C",
@@ -489,7 +546,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "310 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      }
                   ]
                },
@@ -506,6 +564,8 @@ export class AppService {
                   "fecha_entrega": 20180417,
                   "categoria_stock": "YBNA1",
                   "usuario": "RANGELDA",
+                  "faseProve": "",
+                  "TALLERES": undefined,
                   "DETALLE": [
                      {
                         "valor_matriz": "30BL01B",
@@ -515,7 +575,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "100 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "true"
                      },
                      {
                         "valor_matriz": "30BL01C",
@@ -525,7 +586,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "110 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "true"
                      },
                      {
                         "valor_matriz": "32BL01B",
@@ -535,7 +597,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "200 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "32BL01C",
@@ -545,7 +608,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "210 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "34BL01B",
@@ -555,7 +619,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "300 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "34BL01C",
@@ -565,7 +630,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "310 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      }
                   ]
                },
@@ -582,6 +648,8 @@ export class AppService {
                   "fecha_entrega": 20180627,
                   "categoria_stock": "YBNA1",
                   "usuario": "RANGELDA",
+                  "faseProve": "FASE1",
+                  "TALLERES": undefined,
                   "DETALLE": [
                      {
                         "valor_matriz": "30BL01B",
@@ -591,7 +659,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "101 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "32BL01B",
@@ -601,7 +670,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "200 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "34BL01B",
@@ -611,7 +681,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "300 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "true"
                      },
                      {
                         "valor_matriz": "30BL01C",
@@ -621,7 +692,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "101 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "32BL01C",
@@ -631,7 +703,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "201 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      },
                      {
                         "valor_matriz": "34BL01C",
@@ -641,7 +714,8 @@ export class AppService {
                         "cantidad_entregar": "0 ",
                         "cantidad_confirmada": "0 ",
                         "cantidad_maxima": "301 ",
-                        "posicion_pedido": "10"
+                        "posicion_pedido": "10",
+                        "ilimitado": "false"
                      }
                   ]
                }
@@ -690,18 +764,21 @@ export class AppService {
                field: 'Material',
                sort: 'asc',
                width: 150
-            },   
+            },
             {
                label: 'Descripcion orden',
                field: 'DescOrdenTabulado',
                sort: 'asc',
                width: 200
-            }  
+            }
          ],
          rows: []
       },
       {
          Details: []
+      },
+      {
+         Workshops: []
       }
    ]
 
@@ -838,7 +915,7 @@ export class AppService {
       }
    }]
 
-   jsonApointments =[
+   jsonApointments = [
       {
 
          columns: [
@@ -1634,7 +1711,7 @@ export class AppService {
                field: 'cantidad_inicial',
                sort: 'asc',
                width: 80
-            }, 
+            },
             {
                label: 'Cantidad Solicitadas en Citas',
                field: 'cantidad_confirmada',
@@ -1671,39 +1748,46 @@ export class AppService {
       orders.map((dataTable, index) => {
          this.jsonTable[0].rows.push({
             //AGRAGADOS PARA HACER POST GUARDAR
-            acreedor : dataTable.acreedor ? dataTable.acreedor : ' ',
+            acreedor: dataTable.acreedor ? dataTable.acreedor : ' ',
             nombre_acreedor: dataTable.nombre_acreedor ? dataTable.nombre_acreedor : ' ',
             direccion: dataTable.direccion ? dataTable.direccion : ' ',
-            correo_electronico:  dataTable.correo_electronico ? dataTable.correo_electronico : ' ',   
-            campana_orden :  dataTable.campana_orden ? dataTable.campana_orden : ' ',        
-            version: dataTable.version ?  dataTable.version : ' ' ,
-            usuario:  dataTable.usuario ? dataTable.usuario : ' ',      
-            fecha_entrega : dataTable.fecha_entrega ? dataTable.fecha_entrega : ' ',   
-            categoria_stock :    dataTable.categoria_stock ? dataTable.categoria_stock : ' ',   
+            correo_electronico: dataTable.correo_electronico ? dataTable.correo_electronico : ' ',
+            campana_orden: dataTable.campana_orden ? dataTable.campana_orden : ' ',
+            version: dataTable.version ? dataTable.version : ' ',
+            usuario: dataTable.usuario ? dataTable.usuario : ' ',
+            fecha_entrega: dataTable.fecha_entrega ? dataTable.fecha_entrega : ' ',
+            categoria_stock: dataTable.categoria_stock ? dataTable.categoria_stock : 'MALA',
+            faseProve: dataTable.faseProve ? dataTable.faseProve : ' ',
             //FIN DE AGREGADOS
 
             Fecha: this.dateFormat(dataTable.fecha_entrega),
             DocCompra: dataTable.doc_compra ? dataTable.doc_compra : ' ',
             OrdenFab: dataTable.orden_fabricacion ? parseInt(dataTable.orden_fabricacion) : ' ',
-            CodMaterial: dataTable.material ? parseInt(dataTable.material) : ' ',
-            Material: dataTable.texto_material ? dataTable.texto_material : ' ',
-            DescOrdenCampana: dataTable.campana_orden ? 'Campaña: ' +  dataTable.campana_orden : ' ' ,
-            DescOrdenVersion: dataTable.version ? 'Version: ' + dataTable.version : ' ' ,
+            CodMaterial: dataTable.material ? parseInt(dataTable.material) : 'MALA',
+            Material: dataTable.texto_material ? dataTable.texto_material : 'MALA',
+            DescOrdenCampana: dataTable.campana_orden ? 'Campaña: ' + dataTable.campana_orden : ' ',
+            DescOrdenVersion: dataTable.version ? 'Version: ' + dataTable.version : ' ',
             DescOrdenPedido: dataTable.usuario ? 'Resp.Pedido: ' + dataTable.usuario : ' ',
             Order: index
          })
          this.jsonTable[1].Details.push(
             dataTable.DETALLE
-         )
+         )  
+         this.jsonTable[1].Workshops.push(
+            dataTable.TALLERES
+         )     
       })
       return this.jsonTable;
    }
 
-// Modificando
-   getdeliveryCategoriesById(id: number): Object{
+   // Modificando
+   getdeliveryCategoriesById(id: number): Object {
       return this.jsonexample[0].Resp_MT_PORTALPROVEEDOR_ORDENESPENDIENTES.ORDENESPENDIENTES.CABECERA[id].DETALLE;
    }
 
+   getWorkshopsById(id: number): Object {
+      return this.jsonexample[0].Resp_MT_PORTALPROVEEDOR_ORDENESPENDIENTES.ORDENESPENDIENTES.CABECERA[id].TALLERES;
+   }
 
    dateFormat(date: number) {
       let newDate = date.toString()
@@ -1717,7 +1801,7 @@ export class AppService {
             CitaNumero: dataTable.consecutivo_ord_procesa ? parseInt(dataTable.consecutivo_ord_procesa) : 'No hay dato',
             FechaRecogida: parseInt(dataTable.fecha_recogida) > 0 ? dataTable.fecha_recogida : 'Sin asignar',
             HoraRecogida: parseInt(dataTable.fecha_recogida) > 0 ? 'le del filosofo' : 'Sin asignar',
-            Transportadora: dataTable.transporte_propio ?  dataTable.transporte_propio : 'Sin asignar',
+            Transportadora: dataTable.transporte_propio ? dataTable.transporte_propio : 'Sin asignar',
             Documentos: `Doc. Compra: ${dataTable.doc_compra} \n Ord.Fabricacion: ${parseInt(dataTable.orden_fabricacion)} `,
             Order: index
          })
@@ -1731,47 +1815,48 @@ export class AppService {
             dir: dataTable.direccion,
             mail: dataTable.correo_electronico,
             doc_compra: dataTable.doc_compra,
-            cod_material:  parseInt(dataTable.material),
+            cod_material: parseInt(dataTable.material),
             orden: parseInt(dataTable.orden_fabricacion),
             material: dataTable.texto_material,
             ord_proceso: parseInt(dataTable.consecutivo_ord_procesa),
             categoria: dataTable.categoria_stock
          }
-            
-         )
-     })
-    return this.jsonApointments;
-  }
 
-   getDetailsApoinments(id: number): Object{
+         )
+      })
+      return this.jsonApointments;
+   }
+
+   getDetailsApoinments(id: number): Object {
 
       return this.jsonApointments[1].Details[id]
    }
 
+ 
 
    getReport(): Object {
       let reports = this.jsonReports[0].Resp_MT_PORTALPROVEEDOR_REPORTEORDENES.ORDENESPENDIENTES.CABECERA;
-      
+
       reports.map((dataTable, vc) => {
-        
+
          for (let vc2 of dataTable.DETALLE) {
 
             this.jsonReportsFinal[0].rows.push({
                doc_compra: dataTable.doc_compra,
-               orden_fabricacion: dataTable.orden_fabricacion.trim() === '' ? " " : dataTable.orden_fabricacion.trim(),            
+               orden_fabricacion: dataTable.orden_fabricacion.trim() === '' ? " " : dataTable.orden_fabricacion.trim(),
                texto_material: dataTable.texto_material ? dataTable.texto_material : 'No hay dato',
-               campana_orden : dataTable.campana_orden,            
-               categoria_stock : dataTable.categoria_stock,
-               valor_matriz : vc2.valor_matriz ? vc2.valor_matriz : 'No hay dato',
-               cantidad_inicial : vc2.cantidad_inicial ? vc2.cantidad_inicial : 'No hay dato',
-               cantidad_confirmada : vc2.cantidad_confirmada,
-               DescOrden : vc2.posicion_pedido,
-               cantidad_pendiente : vc2.cantidad_pendiente,
-               cantidad_entregar : vc2.cantidad_entregar,
-               consecutivocita : vc2.consecutivocita === '' ? " " : vc2.consecutivocita
-            
+               campana_orden: dataTable.campana_orden,
+               categoria_stock: dataTable.categoria_stock,
+               valor_matriz: vc2.valor_matriz ? vc2.valor_matriz : 'No hay dato',
+               cantidad_inicial: vc2.cantidad_inicial ? vc2.cantidad_inicial : 'No hay dato',
+               cantidad_confirmada: vc2.cantidad_confirmada,
+               DescOrden: vc2.posicion_pedido,
+               cantidad_pendiente: vc2.cantidad_pendiente,
+               cantidad_entregar: vc2.cantidad_entregar,
+               consecutivocita: vc2.consecutivocita === '' ? " " : vc2.consecutivocita
+
             })
-          }   
+         }
       })
       return this.jsonReportsFinal;
    }

@@ -15,6 +15,11 @@ export class AppController {
     return this.appService.getdeliveryCategoriesById(params.id);
   }
 
+  @Get('/deliveryWprkshopsById/:id')
+  getWorkshopsById(@Param() params): Object{
+    return this.appService.getWorkshopsById(params.id);
+  }
+
   @Get('/apointments')
   getApointments(): Object{
     return this.appService.getApointments();
