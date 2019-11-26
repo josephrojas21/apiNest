@@ -96,7 +96,14 @@ export class AppService {
                   "categoria_stock": "CRML1",
                   "usuario": "ALEX FLOREZ",
                   "faseProve": "",
-                  "TALLERES": undefined,
+                  "TALLERES": [
+                     {
+                        "direccion": "VENECIA"
+                     },
+                     {
+                        "direccion": "VERSALLES"
+                     }
+                  ],
                   "DETALLE": [
                      {
                         "valor_matriz": "32BL",
@@ -148,7 +155,14 @@ export class AppService {
                   "categoria_stock": "CRML1",
                   "usuario": "ALEX FLOREZ",
                   "faseProve": "",
-                  "TALLERES": undefined,
+                  "TALLERES": [
+                     {
+                        "direccion": "VENECIA"
+                     },
+                     {
+                        "direccion": "VERSALLES"
+                     }
+                  ],
                   "DETALLE": [
                      {
                         "valor_matriz": "XS  VD",
@@ -211,7 +225,14 @@ export class AppService {
                   "categoria_stock": "PCFK1",
                   "usuario": "ALEX FLOREZ",
                   "faseProve": "",
-                  "TALLERES": undefined,
+                  "TALLERES": [
+                     {
+                        "direccion": "VENECIA"
+                     },
+                     {
+                        "direccion": "VERSALLES"
+                     }
+                  ],
                   "DETALLE": [
                      {
                         "valor_matriz": "S   UN",
@@ -262,7 +283,14 @@ export class AppService {
                   "categoria_stock": "YBNA1",
                   "usuario": "RANGELDA",
                   "faseProve": "",
-                  "TALLERES": undefined,
+                  "TALLERES": [
+                     {
+                        "direccion": "VENECIA"
+                     },
+                     {
+                        "direccion": "VERSALLES"
+                     }
+                  ],
                   "DETALLE": [
                      {
                         "valor_matriz": "30BL01B",
@@ -313,7 +341,14 @@ export class AppService {
                   "categoria_stock": "YBNA1",
                   "usuario": "RANGELDA",
                   "faseProve": "FASE2",
-                  "TALLERES": undefined,
+                  "TALLERES": [
+                     {
+                        "direccion": "VENECIA"
+                     },
+                     {
+                        "direccion": "VERSALLES"
+                     }
+                  ],
                   "DETALLE": [
                      {
                         "valor_matriz": "30BL01C",
@@ -397,7 +432,14 @@ export class AppService {
                   "categoria_stock": "YBNA1",
                   "usuario": "Julian CARVAJAL",
                   "faseProve": "",
-                  "TALLERES": undefined,
+                  "TALLERES": [
+                     {
+                        "direccion": "VENECIA"
+                     },
+                     {
+                        "direccion": "VERSALLES"
+                     }
+                  ],
                   "DETALLE": [
                      {
                         "valor_matriz": "30BL01B",
@@ -481,7 +523,14 @@ export class AppService {
                   "categoria_stock": "YBNA1",
                   "usuario": "RANGELDA",
                   "faseProve": "FASE1",
-                  "TALLERES": undefined,
+                  "TALLERES": [
+                     {
+                        "direccion": "VENECIA"
+                     },
+                     {
+                        "direccion": "VERSALLES"
+                     }
+                  ],
                   "DETALLE": [
                      {
                         "valor_matriz": "30BL01B",
@@ -565,7 +614,14 @@ export class AppService {
                   "categoria_stock": "YBNA1",
                   "usuario": "RANGELDA",
                   "faseProve": "",
-                  "TALLERES": undefined,
+                  "TALLERES": [
+                     {
+                        "direccion": "VENECIA"
+                     },
+                     {
+                        "direccion": "VERSALLES"
+                     }
+                  ],
                   "DETALLE": [
                      {
                         "valor_matriz": "30BL01B",
@@ -649,7 +705,14 @@ export class AppService {
                   "categoria_stock": "YBNA1",
                   "usuario": "RANGELDA",
                   "faseProve": "FASE1",
-                  "TALLERES": undefined,
+                  "TALLERES": [
+                     {
+                        "direccion": "VENECIA"
+                     },
+                     {
+                        "direccion": "VERSALLES"
+                     }
+                  ],
                   "DETALLE": [
                      {
                         "valor_matriz": "30BL01B",
@@ -775,11 +838,11 @@ export class AppService {
          rows: []
       },
       {
-         Details: []
-      },
-      {
+         Details: [],
          Workshops: []
-      }
+         
+      }         
+   
    ]
 
    jsonCitas = [{
@@ -1743,6 +1806,9 @@ export class AppService {
 
 
    getDeliveryCategories(): object {
+
+      let defaultJson = [{"":""}]
+
       //console.log(this.jsonexample[0].Resp_MT_PORTALPROVEEDOR_ORDENESPENDIENTES.ORDENESPENDIENTES.CABECERA);
       let orders = this.jsonexample[0].Resp_MT_PORTALPROVEEDOR_ORDENESPENDIENTES.ORDENESPENDIENTES.CABECERA;
       orders.map((dataTable, index) => {
@@ -1773,9 +1839,9 @@ export class AppService {
          this.jsonTable[1].Details.push(
             dataTable.DETALLE
          )  
-         this.jsonTable[1].Workshops.push(
-            dataTable.TALLERES
-         )     
+          this.jsonTable[1].Workshops.push(
+             dataTable.TALLERES 
+          )     
       })
       return this.jsonTable;
    }
